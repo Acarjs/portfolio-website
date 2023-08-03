@@ -23,6 +23,14 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #151516;
+}
+
+* {
+  color: #fff;
+}
+
 #about {
   background-color: yellow;
 }
