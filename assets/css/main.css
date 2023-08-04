@@ -31,6 +31,43 @@ body {
   color: #fff;
 }
 
+main {
+  padding-left: 90px;
+}
+
+#sidebar {
+  position: fixed;
+  background: red;
+  height: 100vh;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar .logo {
+  font-size: 2.5rem;
+  height: 30%;
+  padding-top: 60px;
+  text-align: center;
+}
+#sidebar nav {
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+#sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#sidebar nav ul li {
+  position: relative;
+}
+#sidebar nav ul li span {
+  position: absolute;
+  white-space: nowrap;
+  left: 20px;
+}
+
 #about {
   background-color: yellow;
 }
