@@ -32,27 +32,30 @@ body {
 }
 
 main {
-  padding-left: 90px;
+  padding-left: 116px;
 }
 
 #sidebar {
   position: fixed;
   background: red;
   height: 100vh;
-  width: 90px;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
   display: flex;
   flex-direction: column;
 }
 #sidebar .logo {
   font-size: 2.5rem;
-  height: 30%;
-  padding-top: 60px;
+  height: 250px;
+  padding-top: 3rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 #sidebar nav {
-  height: 70%;
+  height: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #sidebar nav ul {
   list-style: none;
@@ -61,11 +64,28 @@ main {
 }
 #sidebar nav ul li {
   position: relative;
+  margin-bottom: 2rem;
+}
+#sidebar nav ul li a:hover i {
+  color: #fff;
+}
+#sidebar nav ul li a:hover + span {
+  opacity: 1;
+}
+#sidebar nav ul li a i {
+  font-size: 1.5rem;
+  color: #b9b9b9;
 }
 #sidebar nav ul li span {
   position: absolute;
   white-space: nowrap;
-  left: 20px;
+  left: 28px;
+  background: rgba(30, 30, 32, 0.75);
+  border-radius: 6px;
+  padding: 7px 13px;
+  top: -4px;
+  opacity: 0;
+  transition: all 1s;
 }
 
 #about {
