@@ -37,7 +37,6 @@ main {
 
 #sidebar {
   position: fixed;
-  background: red;
   height: 100vh;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
@@ -71,6 +70,7 @@ main {
 }
 #sidebar nav ul li a:hover + span {
   opacity: 1;
+  left: 30px;
 }
 #sidebar nav ul li a i {
   font-size: 1.5rem;
@@ -79,13 +79,13 @@ main {
 #sidebar nav ul li span {
   position: absolute;
   white-space: nowrap;
-  left: 28px;
+  left: 20px;
   background: rgba(30, 30, 32, 0.75);
   border-radius: 6px;
   padding: 7px 13px;
-  top: -4px;
+  top: -8px;
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 
 #about {

@@ -1,6 +1,6 @@
 #sidebar {
   position: fixed;
-  background: red;
+  // background: red;
   height: 100vh;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
@@ -38,6 +38,7 @@
 
             + span {
               opacity: 1;
+              left: 30px;
             }
           }
 
@@ -50,13 +51,13 @@
         span {
           position: absolute;
           white-space: nowrap;
-          left: 28px;
+          left: 20px;
           background: rgba($secondary, 0.75);
           border-radius: 6px;
           padding: 7px 13px;
-          top: -4px;
+          top: -8px;
           opacity: 0;
-          transition: all 1s;
+          transition: all 0.3s;
         }
       }
     }
