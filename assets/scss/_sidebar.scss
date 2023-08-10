@@ -31,6 +31,8 @@
         margin-bottom: 2rem;
 
         a {
+          position: relative;
+
           &:hover {
             i {
               color: $white;
@@ -39,6 +41,18 @@
             + span {
               opacity: 1;
               left: 30px;
+            }
+          }
+
+          &.active {
+            &::before {
+              content: '';
+              position: absolute;
+              width: 46px;
+              height: 46px;
+              border-radius: 50%;
+              background: $primary;
+              opacity: 0.15;
             }
           }
 

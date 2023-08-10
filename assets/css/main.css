@@ -34,6 +34,12 @@ body {
 main {
   padding-left: 116px;
 }
+main > section {
+  display: none;
+}
+main > section.active {
+  display: block;
+}
 
 #sidebar {
   position: fixed;
@@ -65,12 +71,24 @@ main {
   position: relative;
   margin-bottom: 2rem;
 }
+#sidebar nav ul li a {
+  position: relative;
+}
 #sidebar nav ul li a:hover i {
   color: #fff;
 }
 #sidebar nav ul li a:hover + span {
   opacity: 1;
   left: 30px;
+}
+#sidebar nav ul li a.active::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #1d5d9b;
+  opacity: 0.15;
 }
 #sidebar nav ul li a i {
   font-size: 1.5rem;
@@ -97,5 +115,5 @@ main {
 }
 
 #home {
-  background-color: red;
+  background-color: #b9b9b9;
 }/*# sourceMappingURL=main.css.map */
