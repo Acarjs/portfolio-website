@@ -81,21 +81,30 @@ main > section.active {
   opacity: 1;
   left: 30px;
 }
-#sidebar nav ul li a.active::before {
+#sidebar nav ul li a::before {
   content: "";
   position: absolute;
   width: 46px;
   height: 46px;
   border-radius: 50%;
   background: #1d5d9b;
-  opacity: 0.6;
+  opacity: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s;
+}
+#sidebar nav ul li a.active::before {
+  opacity: 0.3;
+  transform: translate(-50%, -50%) scale(1);
+}
+#sidebar nav ul li a.active i {
+  color: #1d5d9b;
 }
 #sidebar nav ul li a i {
   font-size: 1.5rem;
   color: #b9b9b9;
+  transition: all 0.5s;
 }
 #sidebar nav ul li span {
   position: absolute;
@@ -107,10 +116,6 @@ main > section.active {
   top: -8px;
   opacity: 0;
   transition: all 0.3s;
-}
-
-#about {
-  background-color: yellow;
 }
 
 #contact {

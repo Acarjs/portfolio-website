@@ -1,6 +1,5 @@
 #sidebar {
   position: fixed;
-  // background: red;
   height: 100vh;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
@@ -44,24 +43,35 @@
             }
           }
 
+          &::before {
+            content: '';
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: $primary;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all 0.5s;
+          }
+
           &.active {
             &::before {
-              content: '';
-              position: absolute;
-              width: 46px;
-              height: 46px;
-              border-radius: 50%;
-              background: $primary;
-              opacity: 0.6;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+              opacity: 0.3;
+              transform: translate(-50%, -50%) scale(1);
+            }
+
+            i {
+              color: $primary;
             }
           }
 
           i {
             font-size: 1.5rem;
             color: $gray;
+            transition: all 0.5s;
           }
         }
 
