@@ -1,10 +1,20 @@
 @media (max-width: 768px) {
   #sidebar {
+    .logo {
+      text-align: left;
+    }
     nav ul li {
       a {
+        display: flex;
+        align-items: center;
+
+        span {
+          display: block;
+          padding-left: 8px;
+        }
       }
 
-      span {
+      > span {
         display: none;
       }
     }
